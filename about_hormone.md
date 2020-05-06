@@ -1,4 +1,6 @@
-성호르몬 테스트에 대하여
+---
+About
+---
 
 얼굴로 분석하는 성호르몬 유형 판별 테스트는 
 '사람의 얼굴과 인상은 어떻게 만들어 질까?'라는 의문에서 시작하였습니다.
@@ -29,6 +31,14 @@
 여러분이 앱에 전송한 사진은 로컬 앱에서만 활용되며 
 서버나 다른 곳으로는 전송되거나 저장되지 않습니다. 
 
+### Related Articles
 
-SNPs Associated With Testosterone Levels Influence Human Facial Morphology
+[SNPs Associated With Testosterone Levels Influence Human Facial Morphology](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6206510/)
+
+[Prenatal sex hormones, digit ratio, and face shape in adult males](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4293313/)
+
+[Second-to-fourth digit ratio and facial shape in boys: the lower the digit ratio, the more robust the face.](https://www.ncbi.nlm.nih.gov/pubmed/22337693)
+
+
+
 
