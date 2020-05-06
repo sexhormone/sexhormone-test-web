@@ -108,6 +108,12 @@
             </div>
             <p class="result-message"></p>
             <div id="label-container" class="d-flex flex-column justify-content-around"></div>
+            
+            <h3 class="subtitle">[호르몬 유형 표기 설명]</h3>
+            <h4 class="subtitle">T : 남성호르몬(테스토스테론)</h4>
+            <h4 class="subtitle">E : 여성호르몬(에스트로겐)</h4>
+            <h4 class="subtitle">Ave : 남여별 정상 범위내 호르몬 최고치를 100%로 환산한 평균값</h4>
+            <h4 class="subtitle">부등호 : 호르몬 수치를 %로 환산하여 비교한 우열</h4>
 
             <!-- Go to www.addthis.com/dashboard to customize your tools -->
             <div class="addthis_inline_share_toolbox"></div>
@@ -119,11 +125,6 @@
                 
             </div>
             
-            <h4 class="subtitle">T+ : 테스토스테론 평균이상</h4>
-            <h4 class="subtitle">T- : 테스토스테론 평균이하</h4>
-            <h4 class="subtitle">E+ : 에스트로겐 평균이상</h4>
-            <h4 class="subtitle">E- : 에스트로겐 평균이하</h4>
-            <h4 class="subtitle">부등호 : 최고치를 100%로 환산시 우열</h4>
         </div>
     </div>
 
@@ -139,9 +140,9 @@
 <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
     <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script> -->
 
-    <div class="container pt-3">
+    <!-- <div class="container pt-3">
         <div id="disqus_thread"></div>
-    </div>
+    </div> -->
     <footer class="footer pt-5 container d-flex justify-content-center">
         <div>
             <p>&copy; 2020. ZELIA All Rights Reserved. </p>
@@ -165,14 +166,14 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="adModalLabel">(AD)광고 - 재시도를 한번 더 눌러주세요.</h5>
+                    <h5 class="modal-title" id="adModalLabel">재시도를 눌러주세요.</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body d-flex justify-content-center">
+                <!-- <div class="modal-body d-flex justify-content-center">
                     <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-t89oh3sc0ew5" data-ad-width="300" data-ad-height="250"></ins>
-                </div>
+                </div> -->
                 <div class="modal-footer d-flex justify-content-center">
                     <button type="button p-2" class="try-again-btn" onclick="gaReload2();">
                         <span class="try-again-text">다른 사진으로 재시도</span>
@@ -288,56 +289,56 @@
                 });
                 switch (prediction[0].className) {
                     case "Class1":
-                        resultTitle = "테스토스테론(평균이상) > 에스트로겐(평균이상)"
+                        resultTitle = "남성호르몬(T) > 여성호르몬(E) > 평균"
                         resultLook = "외모 : 살과 뼈가 모두 발달되어 근육과 지방이 모두 발달되어 체격이 좋은 편이며, 주로 사각턱을 가진 얼굴이 많고, 체격에 맞게 얼굴도 다소 큰 편"
                         resultExplain = "특성 : 남성호르몬과 여성호르몬 모두 풍부한 당신, 집중력, 목표지향적 행동, 위계질서 등 남들보다 우위에 서고싶은 욕망이 넘치고, 자신감과 용기를 발휘하는 동시에 여성의 다정다감하고 귀여운 모습도 갖고 있어, 모든 사람들에게 부담없이 즐거움을 주는 호감형! 친절하고 활발한 성격으로 어디에서도 인기가 많고, 애교와 웃음이 많아 연인에게 특히나 사랑스럽다."
                         resultCeleb = "대표 연예인: 강호동, 김구라, 김준현, 최홍만, 성시경, 유지태"
-                        gtag('event', '남자 결과 테스토스테론(평균이상) > 에스트로겐(평균이상)', {
+                        gtag('event', '남성호르몬(T) > 여성호르몬(E) > 평균', {
                             'event_category': '남자 결과'
                         });
                         break;
                     case "Class2":
-                        resultTitle = "테스토스테론(평균이상) > 에스트로겐(평균이하)"
+                        resultTitle = "남성호르몬(T) > 평균 > 여성호르몬(E)"
                         resultLook = "외모 : 광대뼈가 다소 돌출되는 경향이 보이고, 턱이 긴 편이며, 입술이 얇은 편"
                         resultExplain = "특성 : 경쟁심과 영웅심리가 있는 상남자 스타일로 야심을 품고, 꿈을 위해 최선을 다하는 노력파가 많다. 하지만 때로는 냉담하고, 이기적인 면도 가지고 있다."
                         resultCeleb = "대표 연예인: 추성훈, 차인표, 하정우, 임재범, 정우성, 이병헌, 송승헌, 김종국, 차승원, 최시원"
-                        gtag('event', '남자 결과 테스토스테론(평균이상) > 에스트로겐(평균이하)', {
+                        gtag('event', '남성호르몬(T) > 평균 > 여성호르몬(E)', {
                             'event_category': '남자 결과'
                         });
                         break;
                     case "Class3":
-                        resultTitle = "테스토스테론(평균이하) > 에스트로겐(평균이하)"
+                        resultTitle = "평균 > 남성호르몬(T) > 여성호르몬(E)"
                         resultLook = "외모 : 귀엽고 순수한 외모로, 얼굴이 동안이라는 소리를 종종 듣는 편이며, 어깨가 발달되어 있는 유형임."
                         resultExplain = "특성 : 호기심이 많아 활발한 성향을 갖고 있으며, 존재 자체가 유쾌함을 주고, 특별한 애교 없이도 연인에게 너무나도 사랑스럽게 느껴지는 스타일"
                         resultCeleb = "대표 연예인: 강동원, 유재석, 신하균, 김태원, 박명수, 유세윤, 유권, 레이, 진영, 엘조"
-                        gtag('event', '남자 결과 테스토스테론(평균이하) > 에스트로겐(평균이하)', {
+                        gtag('event', '평균 > 남성호르몬(T) > 여성호르몬(E)', {
                             'event_category': '남자 결과'
                         });
                         break;
                     case "Class4":
-                        resultTitle = "테스토스테론(평균이상) < 에스트로겐(평균이상)"
+                        resultTitle = "평균 < 남성호르몬(T) < 여성호르몬(E)"
                         resultLook = "외모 : 남성적이면서도 여성적인 얼굴 특성이 보이고, 어깨는 남자답게 넓지만 덩치가 커보이는 그런 느낌은 주지 않음. 운동을 해도 근육보다는 지방이 더 붙는 경향이 있음."
                         resultExplain = "특성 : 여성호르몬이 상대적으로 높아 동조성이 강항 경향을 보이고, 전형적인 꽃미남 스타일"
                         resultCeleb = "대표 연예인: 조인성, 원빈, 장근석, 유승호, 손흥민, 정용화, 닉쿤, 육성재, 시우민, 이기광"
-                        gtag('event', '남자 결과 테스토스테론(평균이상) < 에스트로겐(평균이상)', {
+                        gtag('event', '평균 < 남성호르몬(T) < 여성호르몬(E)', {
                             'event_category': '남자 결과'
                         });
                         break;
                     case "Class5":
-                        resultTitle = "테스토스테론(평균이하) < 에스트로겐(평균이상)"
+                        resultTitle = "남성호르몬(T) < 평균 < 여성호르몬(E)"
                         resultLook = "외모 : 부드러운 얼굴선과 두툼한 입술, 허리가 가늘고 엉덩이가 큰 편으로 여장이 잘 어울리는 스타일"
                         resultExplain = "특징 : 배려심이 많고, 남을 잘 도와줘 주변에 친구가 많은 편이지만, 자기주장이 뚜렷하고, 강한 면이 있음. 취미생활도 여성적인 것 일 수 있음"
                         resultCeleb = "대표 연예인: 송중기, 김경호, 신혜성, 양요섭, 태민, 정지용, 루한, 성종, 성민"
-                        gtag('event', '남자 결과 테스토스테론(평균이하) < 에스트로겐(평균이상)', {
+                        gtag('event', '남성호르몬(T) < 평균 < 여성호르몬(E)', {
                             'event_category': '남자 결과'
                         });
                         break;
                     case "Class6":
-                        resultTitle = "테스토스테론(평균이하) < 에스트로겐(평균이하)"
+                        resultTitle = "남성호르몬(T) < 여성호르몬(E) < 평균"
                         resultLook = "외모 : 6가지 호르몬 유형중 가장 동안으로 보이며, 어릴때 얼굴 모습의 특성을 많이 간직하고 있음."
                         resultExplain = "특징 : 남녀노소 모두에게 인기가 좋은 편이며, 어린아이 같이 천진난만한 모습이 있음."
                         resultCeleb = "대표 연예인: 김국진, 박성광, 산들, 리키"
-                        gtag('event', '남자 결과 테스토스테론(평균이하) < 에스트로겐(평균이하)', {
+                        gtag('event', '남성호르몬(T) < 여성호르몬(E) < 평균', {
                             'event_category': '남자 결과'
                         });
                         break;
@@ -357,65 +358,65 @@
                 });
                 switch (prediction[0].className) {
                     case "Class1":
-                        resultTitle = "테스토스테론(평균이상) > 에스트로겐(평균이상)"
+                        resultTitle = "남성호르몬(T) > 여성호르몬(E) > 평균"
                         resultLook = "외모: 얇은 입술, 턱과 광대뼈가 발달하는 남성적인 특성이 나타나고, 키가 크고, 어깨가 넓은 글래머스타일의 외모로 여성적인 느낌이 강함"
                         resultExplain = "특징: 쾌활하고 활달하며 모험심과 창의성이 풍부함. 모든 일에 적극적이고 의리파이며, 감수성이 풍부해 예술 방면에 재능있는 사람이 많음. 공명심과 자존심이 강하며, 보기와 달리 세심하고 다른 사람에게 호의를 잘 베푸는 스타일"
                         resultCeleb = "대표 연예인: 박칼린, 한비야, 최정원, 이소라"
-                        gtag('event', '여자 결과 테스토스테론(평균이상) > 에스트로겐(평균이상)', {
+                        gtag('event', '남성호르몬(T) > 여성호르몬(E) > 평균', {
                             'event_category': '여자 결과'
                         });
                         break;
                     case "Class2":
-                        resultTitle = "테스토스테론(평균이상) > 에스트로겐(평균이하)"
+                        resultTitle = "남성호르몬(T) > 평균 > 여성호르몬(E)"
                         resultLook = "외모: 얼굴에서는 얇은 입술, 사각턱, 눈썹뼈 돌출과 같은 남성적 특성이 보일 수 있고, 체지방이 상대적으로 낮아 어깨가 발달하고 허리가 굵은 편. 치마보다는 바지를 즐겨 입으며, 헐렁한 티셔츠, 남방 같은 여유있는 패션을 좋아함."
                         resultExplain = "특성: 리더십이 강하고 외부 활동을 좋아함. 체력과 의지력이 강하며, 어떤 어려움도 헤쳐나가는 집념과 인내심을 갖춘 노력파. 운동을 좋아하는 경향이 있음."
                         resultCeleb = "대표 연예인: 박세리, 박경림, 조혜련, 엠버 "
-                        gtag('event', '남자 결과 테스토스테론(평균이상) > 에스트로겐(평균이하)', {
-                            'event_category': '남자 결과'
+                        gtag('event', '남성호르몬(T) > 평균 > 여성호르몬(E)', {
+                            'event_category': '여자 결과'
                         });
                         break;
                     case "Class3":
-                        resultTitle = "테스토스테론(평균이하) > 에스트로겐(평균이하)"
+                        resultTitle = "평균 > 남성호르몬(T) > 여성호르몬(E)"
                         resultLook = "외모: 남성적, 여성적 특징이 잘 드러나지 않는 중성적인 미소년 스타일. 가슴골이 드러나는 옷을 꺼리지만, 다리가 길고 날씬한 허벅지를 가지고 있어 짧은 치마나 바지를 즐겨입음."
                         resultExplain = "특징: 남에게 의지않고 무슨 일이든 혼자 해결하려 하며, 다른 사람에게 아쉬운 소리를 잘 못하는 자존심이 강한 성격. 겉으로 얌전해 보이지만 당차고 자립심이 강한 성격"
                         resultCeleb = "대표 연예인: 공효진, 공민지, 한효주, 천우희, 선우선"
-                        gtag('event', '여자 결과 테스토스테론(평균이하) > 에스트로겐(평균이하)', {
+                        gtag('event', '평균 > 남성호르몬(T) > 여성호르몬(E)', {
                             'event_category': '여자 결과'
                         });
                         break;
                     case "Class4":
-                        resultTitle = "테스토스테론(평균이상) < 에스트로겐(평균이상)"
+                        resultTitle = "평균 < 남성호르몬(T) < 여성호르몬(E)"
                         resultLook = "외모: 광대뼈나 턱뼈가 발달하더라도 두드러지지 않음. 키가 크고 다리가 길며, 어깨가 넓을 수 있고,글래머스타일 외모로 여성적인 느낌이 강함"
                         resultExplain = "특징: 전체적으로 여성적인 느낌이 강하고, 겉모습은 여성스러운데, 털털한 성격의 반전 매력이 있으며, 나이에 비해 성숙한 편이고, 애교가 많거나 귀여운 느낌은 아니지만 상대방을 편안하게 대해주고, 허물없이 대해줌."
                         resultCeleb = "대표 연예인: 이효리, 고소영, 전지현, 박진희, 김연아, 박신혜, 박봄, 윤아, 유이, 유라"
-                        gtag('event', '여자 결과 테스토스테론(평균이상) < 에스트로겐(평균이상)', {
+                        gtag('event', '평균 < 남성호르몬(T) < 여성호르몬(E)', {
                             'event_category': '여자 결과'
                         });
                         break;
                     case "Class5":
-                        resultTitle = "테스토스테론(평균이하) < 에스트로겐(평균이상)"
+                        resultTitle = "남성호르몬(T) < 평균 < 여성호르몬(E)"
                         resultLook = "외모: 피부가 희고 매끈함. 얼굴에서 남성적인 특징은 나타나지 않아 갸름한 얼굴에 눈이 크고 코가 작은 편임. 코의 윤곽선이 약간 들린 편으로 소녀같은 얼굴에 글래머러스한 체형이 특징"
                         resultExplain = "특징 : 너그럽고 배려심이 많음. 남을 잘 도와주는 편이지만 자기주장이 뚜렷하고 강함. 얌전하고 순진한 외모의 이미지와 달리 내숭이 있으며, 자신의 일을 잘 챙기지 못하기도 함."
                         resultCeleb = "대표 연예인: 송혜교, 한지민, 김태희, 수애, 수지, 크리스탈, 신세경, 제시카, 이민정, 태연, 박하선"
-                        gtag('event', '여자 결과 테스토스테론(평균이하) < 에스트로겐(평균이상)', {
+                        gtag('event', '남성호르몬(T) < 평균 < 여성호르몬(E)', {
                             'event_category': '여자 결과'
                         });
                         break;
                     case "Class6":
-                        resultTitle = "테스토스테론(평균이하) < 에스트로겐(평균이하)"
+                        resultTitle = "남성호르몬(T) < 여성호르몬(E) < 평균"
                         resultLook = "외모: 6가지 성호르몬 유형중 가장 동안으로 어릴때 얼굴 모습을 많이 간직하고 있음, 전체적으로 지방이 고르게 발달하는 경향이 있으며, 가슴과 힙이 상대적으로 발달하는 편임."
                         resultExplain = "특징: 때로는 다른 사람의 시선을 신경쓰지 않고 하고 싶은 대로 행동하지만 작은 일에도 잘 놀라는 소심한 성격으로 혼자보다는 누군가와 함께 하는 것을 선호하는 성향을 갖고 있음. 어린아이처럼 순수하고, 장난을 좋아함."
                         resultCeleb = "대표 연예인: 아이유, 장나라, 민아, 송지효, 한승연"
-                        gtag('event', '여자 결과 테스토스테론(평균이하) < 에스트로겐(평균이하)', {
+                        gtag('event', '남성호르몬(T) < 여성호르몬(E) < 평균', {
                             'event_category': '여자 결과'
                         });
                         break;
                     default:
-                        resultTitle = "여자알수없음"
+                        resultTitle = "여자 결과 알수 없음"
                         resultLook = ""
                         resultExplain = ""
                         resultCeleb = ""
-                        gtag('event', '여자 결과 알수없음', {
+                        gtag('event', '여자 결과 알수 없음', {
                             'event_category': '여자 결과'
                         });
                 }
@@ -437,22 +438,22 @@
                 var labelTitle;
                 switch (prediction[i].className) {
                     case "Class1":
-                        labelTitle = "T+ > E+"
+                        labelTitle = "T > E > Ave"
                         break;
                     case "Class2":
-                        labelTitle = "T+ > E-"
+                        labelTitle = "T > Ave > E"
                         break;
                     case "Class3":
-                        labelTitle = "T- > E-"
+                        labelTitle = "Ave > T > E"
                         break;
                     case "Class4":
-                        labelTitle = "T+ < E+"
+                        labelTitle = "Ave < T < E"
                         break;
                     case "Class5":
-                        labelTitle = "T- < E+"
+                        labelTitle = "T < Ave < E"
                         break;
                     case "Class6":
-                        labelTitle = "T- < E-"
+                        labelTitle = "T < E < Ave"
                         break;
                     default:
                         labelTitle = "알수없음"
